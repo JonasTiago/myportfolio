@@ -7,7 +7,9 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
-   --cor-secondary: #EAF2FD; 
+   --cor-secondary: #EAF2FD;
+   --cor-button-blue:#2A7AE4;
+   --cor-button-gray:#F5F5F5; 
   }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -29,92 +31,6 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: column;
 }
 
-/*Sessão skills*/
-
-section.skills{
-    background-color: var(--cor-de-fundo);
-}
-
-.skills__title{
-    font-size: 32px;
-    text-align: center;
-    margin: 32px 0;
-}
-
-.skills__line{
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin:32px auto ;
-}
-
-.skills__box{
-    width: 176px;
-    height: 174px;
-    background-color: #fff;
-    display: flex;
-    align-items: end;
-    padding: 16px;
-}
-
-.skills__box ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.skills__box  .skills__img{
-    margin-bottom: 10px;
-}
-
-/*Sessão Hobbies*/
-
-section.hobbies{
-    background-color: var(--cor-de-fundo);
-    padding: 25px 0;
-}
-
-.hobbies__title{
-    font-size: 32px;
-    text-align: center;
-    margin: 32px 0;
-}
-
-.hobbies__line{
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin:32px auto ;
-}
-
-.hobbies__box{
-    width: 176px;
-    height: 174px;
-    background-color: #fff;
-    display: flex;
-    align-items: end;
-    padding: 16px;
-}
-
-.hobbies__box ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.hobbies__box  .hobbies__img{
-    margin-bottom: 10px;
-}
-
-/* Experiência Acadêmica*/
-
-section.academic{
-
-}
-
-/* experiência*/
-
-section.experience{
-
-}
 
 /*Contato*/
 

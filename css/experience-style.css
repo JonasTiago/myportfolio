@@ -1,0 +1,79 @@
+/* experiência*/
+
+section.experience{
+  background-color: var(--cor-de-fundo);
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience__section__title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.experiencie__full__box{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencie__box{
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.experiencie__box:nth-child(odd){
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  
+}
+
+.experiencie__box .experience__img{
+  width: 752px;
+  height: 406px;
+  margin:  0 20px;
+}
+
+.experiencie__box .experience__info{
+  width: 30%;
+}
+
+.experience__info .experience__title{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.experience__text{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.experiencia__botao--repo{
+  background-color: var(--cor-button-gray);
+  width: 105px;
+  height: 51px;
+  cursor: pointer;
+  border: 1px solid var(--cor-button-blue);
+  color: var(--cor-button-blue);
+  margin:10px 0 10px 0px;
+  border-radius: 5px;
+}
+
+.experiencia__botao--demo{
+  background-color:var(--cor-button-blue);
+  width: 105px;
+  height: 51px;
+  cursor: pointer;
+  color: #Fff;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+}
