@@ -38,11 +38,49 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+.all{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
 /*Sessão Menu*/
 
 section.menu{
-
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    height: 4rem;
 }
+
+.menu > header{
+    display: flex;
+    align-items: center;
+    
+}
+.menu > header > img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu > header > .menu__title{
+    margin-right: 20px;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__list__item{
+    margin-left:20px ;
+}
+
 
 /*Sessão Title*/
 
