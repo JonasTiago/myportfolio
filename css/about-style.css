@@ -1,0 +1,23 @@
+/*Sessão About*/
+
+section.about{
+  margin: auto;
+  background-color: var(--cor-secondary);
+  
+}
+
+.about__container{
+  padding: 80px;
+  margin: auto;
+  width: 70%;
+}
+
+.about__title{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about__paragraph{
+  margin-bottom: 25px;
+  font-size: 16px;
+}

@@ -7,23 +7,8 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
-}
-
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-ol, ul,li {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
-}
+   --cor-secondary: #EAF2FD; 
+  }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
@@ -44,55 +29,8 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: column;
 }
 
-/*Sessão Menu*/
-
-section.menu{
-    background-color: #F5F5F5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top:0;
-    right: 0;
-    height: 4rem;
-}
-
-.menu > header{
-    display: flex;
-    align-items: center;
-    
-}
-.menu > header > img{
-    display: inline-block;
-    padding: 10px;
-}
-
-.menu > header > .menu__title{
-    margin-right: 20px;
-}
-
-.menu__list{
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu__list__item{
-    margin-left:20px ;
-}
 
 
-/*Sessão Title*/
-
-section.title{
-
-}
-
-/*Sessão About*/
-
-section.about{
-
-}
 
 /*Sessão Hobbies*/
 
