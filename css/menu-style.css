@@ -3,6 +3,7 @@ section.menu{
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  z-index: 2;
   left: 0;
   top:0;
   right: 0;
@@ -10,10 +11,14 @@ section.menu{
   background-color: var(--cor-de-fundo);
 }
 
+.menu.scroll{
+  height: 5rem;
+  box-shadow:0 3px 5px rgba(0, 0, 0, 0.16);
+}
+
 .menu > header{
   display: flex;
   align-items: center;
-  
 }
 .menu > header > img{
   display: inline-block;
@@ -30,5 +35,9 @@ section.menu{
 }
 
 .menu__list__item{
-  margin-left:20px ;
+  margin-left:20px;
+}
+
+.menu__list__item a:hover{
+  color: blue;
 }

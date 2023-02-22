@@ -1,61 +1,103 @@
 /*Sessão skills*/
 
-section.skills{
+section.skills {
   background-color: var(--cor-de-fundo);
+  padding: 50px;
 }
 
-.skills__title{
+.skills__title {
   font-size: 32px;
+  font-weight: 700;
   text-align: center;
   margin: 32px 0;
 }
 
-.skills__line{
+.skills__line {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   width: 70%;
-  margin:32px auto ;
+  margin: 32px auto;
 }
 
-.skills__box{
+.skills__box {
   width: 176px;
   height: 174px;
   background-color: #fff;
   display: flex;
-  align-items: end;
-  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 }
 
-.skills__box ul{
+.skills__name{
+  font-size: 20px;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime='down'] {
+  transform: translate3d(0, -100%, 0);
+}
+
+[data-anime='up'] {
+  transform: translate3d(0, 100%, 0);
+}
+
+[data-anime='left'] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animation {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.skills__box ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.skills__box  .skills__img{
+.skills__box .skills__img,.hobbies__img {
   margin-bottom: 10px;
+  width: 65px;
+  transition: all 1s;
+}
+
+.skills__box .skills__img:hover {
+  margin-bottom: 10px;
+  width: 70px;
 }
 
 /*Sessão Hobbies*/
 
-section.hobbies{
+section.hobbies {
   background-color: var(--cor-de-fundo);
   padding: 88px 0;
 }
 
-.hobbies__title{
+.hobbies__title {
   font-size: 32px;
   text-align: center;
   margin: 32px 0;
 }
 
-.hobbies__line{
+.hobbies__line {
   display: flex;
   justify-content: space-around;
   width: 70%;
-  margin:32px auto ;
+  margin: 32px auto;
 }
 
-.hobbies__box{
+.hobbies__box {
   width: 176px;
   height: 174px;
   background-color: #fff;
@@ -64,11 +106,7 @@ section.hobbies{
   padding: 16px;
 }
 
-.hobbies__box ul{
+.hobbies__box ul {
   display: flex;
   flex-direction: column;
-}
-
-.hobbies__box  .hobbies__img{
-  margin-bottom: 10px;
 }

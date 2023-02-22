@@ -3,7 +3,7 @@
 section.title{
     background-color: #F5F5F5;
     margin-top: 4rem;
-    padding:50px 0;
+    padding:80px 0;
 }
 
 .title__div{
@@ -36,5 +36,31 @@ section.title{
 .title__network{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 28%;
 }
+
+.title__network__item a ion-icon{
+    font-size: 45px;
+    margin: 0px 10px;
+}
+
+.title__network__item a ion-icon:hover{
+    opacity: 0.788;
+}
+
+.title__network__item:nth-child(1) a ion-icon{
+    color: #181717;
+}
+
+.title__network__item:nth-child(2) a ion-icon{
+    color: #0A66C2;
+}
+
+.title__network__item:nth-child(3) a ion-icon{
+    color: #E4405F;
+}
+
+.title__network__item:nth-child(4) a ion-icon{
+    color: #181717;
+}
+

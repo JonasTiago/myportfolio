@@ -36,19 +36,65 @@ section.formcontato {
     margin-top: 32px;
 }
 
-.formcontato__form input{
+.formcontato__form input,textarea{
     width: 656px;
     height: 56px;
     margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.formcontato__form input:focus, textarea:focus{
+    border-bottom:2px solid #2a7ae4 ;
+    outline:none;
+}
+
+.formcontato__form > div{
+    position: relative;
+}
+
+.formcontato__form label{
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    margin-bottom: 20px;
+    color: #A2A2A2;
+    display: block;
+    transition: 0.5s;
+}
+
+.formcontato__form .form-focus label{
+    font-size: 14px;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    margin-bottom: 20px;
+    display: block;
+    color: #2a7ae4;
+}
+
+.formcontato__form .form-check label{
+    color: #A2A2A2;
 }
 
 .formcontato__form .formcontato__textarea{
     margin-bottom: 32px;
     width: 656px;
     height: 133px;
+    padding: 12px;
+}
+
+.formcontato__form .formcontato__textarea::placeholder{
+    font-size: 16px;
+    color: #A2A2A2;
 }
 
 .formcontato__form .formcontato__botao{
+    font-size: 16px;
     width: 165px;
     height: 51px;
     margin-bottom: 32px;
@@ -56,6 +102,11 @@ section.formcontato {
     border: none;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
+}
+
+.formcontato__form .formcontato__botao:hover{
+    opacity: 0.88;
 }
 
 
