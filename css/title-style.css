@@ -64,3 +64,19 @@ section.title{
     color: #181717;
 }
 
+@media (max-width: 768px) {
+    section.title{
+        width: 100vw;
+        overflow-y: hidden;
+    }
+
+    .title__div{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+}
+

@@ -110,3 +110,11 @@ section.hobbies {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  section.hobbies{
+    width: 100vw;
+    overflow-y: hidden;
+  }
+}
+

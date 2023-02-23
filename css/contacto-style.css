@@ -83,7 +83,6 @@ section.formcontato {
 
 .formcontato__form .formcontato__textarea{
     margin-bottom: 32px;
-    width: 656px;
     height: 133px;
     padding: 12px;
 }
@@ -107,6 +106,35 @@ section.formcontato {
 
 .formcontato__form .formcontato__botao:hover{
     opacity: 0.88;
+}
+
+@media (max-width: 768px) {
+    section.formcontato{
+        width: 100vw;
+        overflow-y: hidden;
+        margin: auto;
+        padding: 32px;
+    }
+
+    .formcontato--esquerda{
+        display: none;
+    }
+
+    .formcontato__contacto {
+        display: initial;
+        width:0;
+        margin: auto;
+        padding: 0;
+    }
+    .formcontato__form input,textarea{
+        width: 100%;
+    }
+
+    .formcontato__form .formcontato__textarea{
+        margin-bottom: 32px;
+        height: 133px;
+        padding: 12px;
+    }
 }
 
 
