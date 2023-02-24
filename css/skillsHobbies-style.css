@@ -2,32 +2,31 @@
 
 section.skills {
   background-color: var(--cor-de-fundo);
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .skills__title {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  margin: 32px 0;
 }
 
 .skills__line {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   width: 70%;
   margin: 32px auto;
 }
 
 .skills__box {
-  width: 176px;
+  width: 180px;
   height: 174px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 20px;
+  border-radius: 5px;
 }
 
 .skills__name{
@@ -66,7 +65,7 @@ section.skills {
   align-items: center;
 }
 
-.skills__box .skills__img,.hobbies__img {
+.skills__box .skills__img {
   margin-bottom: 10px;
   width: 65px;
   transition: all 1s;
@@ -77,9 +76,37 @@ section.skills {
   width: 70px;
 }
 
+@media (max-width: 768px) {
+  section.skills{
+    width: 100vw;
+    padding: 32px;
+  }
+  
+  .skills__title {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .skills__line {
+    width: 100%;
+    margin: 30px 0;
+    justify-content: space-between;
+  }
+
+  .skills__box {
+    width: 210px;
+    height: 118px;
+    margin: 8px;
+  }
+
+  .skills__box .skills__img {
+    margin-bottom: 10px;
+    width: 50px;
+  }
+}
 /*Sessão Hobbies*/
 
-section.hobbies {
+/* section.hobbies {
   background-color: var(--cor-de-fundo);
   padding: 88px 0;
 }
@@ -109,12 +136,7 @@ section.hobbies {
 .hobbies__box ul {
   display: flex;
   flex-direction: column;
-}
+} */
 
-@media (max-width: 768px) {
-  section.hobbies{
-    width: 100vw;
-    overflow-y: hidden;
-  }
-}
+
 

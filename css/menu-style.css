@@ -51,6 +51,7 @@ section.menu{
     position: initial;
     padding: 0 30px;
     width: 100vw;
+    height: 5rem;
   }
 
   .not__table{

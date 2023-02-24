@@ -41,22 +41,7 @@ html{
 }
 
 
-/*footeer*/
 
-section.footer {
-    background-color: #fff;
-    width: 100%;
-    height: 102px;
-}
-
-.footer__rodape{
-    text-align: center;
-    margin: 2% auto;
-}
-
-.footer__rodape > p {
-    margin-bottom:5px ;
-}
 
 .arrow{
   font-size: 50px;
@@ -84,11 +69,7 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media (max-width: 768px) {
-  section.footer{
-    width: 100vw;
-    overflow-y: hidden;
-  }
-
+  
   .arrow ion-icon{
     display: none;
   }

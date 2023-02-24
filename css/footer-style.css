@@ -1,0 +1,23 @@
+/*footeer*/
+
+section.footer {
+  background-color: #fff;
+  width: 100%;
+  height: 102px;
+}
+
+.footer__rodape{
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.footer__rodape > p {
+  margin-bottom:5px;
+}
+
+@media (max-width: 768px) {
+  section.footer{
+    width: 100vw;
+    overflow-y: hidden;
+  }
+}
