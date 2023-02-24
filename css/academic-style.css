@@ -79,3 +79,22 @@ section.academic{
     width: 100px;
   }
 }
+
+@media (max-width: 425px) {
+  section.academic{
+    width: 100vw;
+    padding: 15px;
+  }
+
+  .academic__courses{
+    width: 100%;
+    margin-bottom:16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academic__courses__box{
+    margin-bottom: 10px;
+  }
+  
+}

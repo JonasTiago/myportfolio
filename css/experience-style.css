@@ -159,3 +159,21 @@ section.experience{
     margin-bottom: 8px;
   }
 }
+
+@media (max-width: 425px) {
+  section.experience{
+    padding: 15px;
+  }
+
+  .experience__description{
+    display: flex;
+  }
+
+  .experiencie__box:nth-child(even){
+    margin: 20px 0;
+  }
+  
+  .experiencie__box:nth-child(odd){
+    margin: 20px 0;
+  }
+}
