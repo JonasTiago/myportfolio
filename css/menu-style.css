@@ -47,15 +47,10 @@ section.menu{
   /* Menu */
 
   section.menu{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     position: initial;
     padding: 0 30px;
-    z-index: 0;
-    height: 4rem;
     width: 100vw;
-    overflow-y: hidden;
   }
 
   .not__table{
