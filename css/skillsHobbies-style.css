@@ -104,6 +104,31 @@ section.skills {
     width: 50px;
   }
 }
+
+@media (max-width: 425px) {
+  section.skills{
+    padding: 15px;
+  }
+  
+  .skills__line {
+    margin: 30px 0;
+  }
+
+  .skills__box {
+    width: 140px;
+    margin: 4px 2px;
+  }
+
+  .skills__box .skills__img {
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
+  .skills__name{
+    font-size: 18px;
+  }
+}
+
 /*Sessão Hobbies*/
 
 /* section.hobbies {
