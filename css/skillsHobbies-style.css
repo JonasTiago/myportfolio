@@ -6,6 +6,7 @@ section.skills {
 }
 
 .skills__title {
+  color: var(--cor-text-black);
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -21,16 +22,18 @@ section.skills {
 .skills__box {
   width: 180px;
   height: 174px;
-  background-color: #fff;
+  background-color: var(--cor-de-fundo2);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(157, 152, 152, 0.564);
 }
 
 .skills__name{
   font-size: 20px;
+  color: var(--cor-text-black);
 }
 
 [data-anime] {
@@ -69,11 +72,6 @@ section.skills {
   margin-bottom: 10px;
   width: 65px;
   transition: all 1s;
-}
-
-.skills__box .skills__img:hover {
-  margin-bottom: 10px;
-  width: 70px;
 }
 
 @media (max-width: 768px) {
@@ -130,40 +128,4 @@ section.skills {
     font-size: 18px;
   }
 }
-
-/*Sessão Hobbies*/
-
-/* section.hobbies {
-  background-color: var(--cor-de-fundo);
-  padding: 88px 0;
-}
-
-.hobbies__title {
-  font-size: 32px;
-  text-align: center;
-  margin: 32px 0;
-}
-
-.hobbies__line {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: 32px auto;
-}
-
-.hobbies__box {
-  width: 176px;
-  height: 174px;
-  background-color: #fff;
-  display: flex;
-  align-items: end;
-  padding: 16px;
-}
-
-.hobbies__box ul {
-  display: flex;
-  flex-direction: column;
-} */
-
-
 

@@ -13,8 +13,8 @@ section.menu{
 
 .menu__title{
   font-weight: 700;
+  color: var(--cor-de-text);
 }
-
 
 .menu.scroll{
   height: 5rem;
@@ -38,6 +38,7 @@ section.menu{
 .menu__list{
   display: flex;
   justify-content: space-around;
+  color: var(--cor-de-text);
 }
 
 .menu__list__item{

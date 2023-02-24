@@ -1,17 +1,43 @@
 /*CSS Reset / Normalize*/
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  /* --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
+  --cor-secondary: #eaf2fd;
+  --cor-button-blue: #00053D;
+  --cor-button-gray: #f5f5f5;
+  --cor-text-black:#464646; */
+}
 
 :root {
   /*Insira a variavel das outras cores inspecionando o modelo do figma*/
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-  --cor-de-fundo: #f5f5f5;
-  --cor-de-link: #000;
-  --cor-secondary: #eaf2fd;
-  --cor-button-blue: #2a7ae4;
-  --cor-button-gray: #f5f5f5;
-  --cor-text-black:#464646;
+  --cor-de-fundo: #F2F2F2;
+  --cor-de-fundo2: #BFBFBF;
+  --cor-de-borde: #308fdde3;
+  
+  --cor-de-link: #0D0D0D;
+  
+  --cor-button-blue: #236faded;
+  --cor-button-green: #3ceb6289;
+
+  --cor-text-black:#0D0D0D;
+  --cor-text-white:#ffffff;
 }
+
+/* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #F2F2F2; }
+.Moda-2-hex { color: #BFBFBF; }
+.Moda-3-hex { color: #737373; }
+.Moda-4-hex { color: #404040; }
+.Moda-5-hex { color: #0D0D0D; }
+
+
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
@@ -29,6 +55,7 @@ https://en.bem.info/methodology/quick-start/*/
 .all {
   display: flex;
   flex-direction: column;
+  color: var(--cor-text-black);
   
 }
 
@@ -37,9 +64,8 @@ html{
 }
 
 .arrow{
-  font-size: 50px;
   position: fixed;
-  right: 50px;
+  right: 55px;
   bottom: 50px;
 }
 
@@ -47,13 +73,37 @@ html{
   display: none;
 }
 
-.arrow ion-icon{
-  font-size: 80px;
-  filter:drop-shadow(0px 2px 0px);
+.arrow a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.arrow ion-icon:hover{
-  color: #2a7ae4;
+.arrow a > ion-icon{
+  font-size: 70px;
+  font-weight: bold;
+  filter:drop-shadow(0px 2px 0px);
+  transition: 1s;
+
+}
+
+.arrow a > span{
+  opacity: 0;
+  font-size: 32px;
+  font-weight: bold;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-family: 'Permanent Marker', cursive;
+  transition: 1s;
+}
+
+.arrow:hover a > span{
+  opacity: 1;
+  display: block;
+  transform: translate3d(0, -50%, 0);
+}
+
+.arrow:hover ion-icon{
+  transform: translate3d(0, -15%, 0);
 }
 
 /*Tablet*/

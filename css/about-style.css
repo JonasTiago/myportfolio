@@ -1,7 +1,8 @@
 /*Sessão About*/
 
 section.about{
-  background-color: var(--cor-secondary);
+  background-color: var(--cor-de-fundo2);
+  color: var(--cor-text-white);
 }
 
 .about__container{
