@@ -59,3 +59,11 @@ section.menu{
   }
 
 }
+
+@media (max-width: 425px) {
+  section.menu{
+    justify-content: space-between;
+    padding:18px;
+    height: 3rem;
+  }
+}
