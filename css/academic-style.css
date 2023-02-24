@@ -2,19 +2,19 @@
 
 section.academic{
   background-color: var(--cor-secondary);
-  padding: 82px 0;
+  padding: 60px 0;
 }
 
 .academic__title{
   font-size: 32px;
   text-align: center;
-  margin: 32px auto;
-  font-weight: bold;
+  margin-bottom: 32px;
+  font-weight: 700;
 }
 
 .academic__courses{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 70%;
   margin: auto;
 }
@@ -48,6 +48,34 @@ section.academic{
 @media (max-width: 768px) {
   section.academic{
       width: 100vw;
-      overflow-y: hidden;
+      padding: 30px;
+    }
+    
+    .academic__title{
+      font-size: 22px;
+    }
+    
+    .academic__courses{
+    width: 100%;
+    margin-bottom:16px;
+  }
+
+  .academic__courses__item__title{
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .academic__courses__item__subtitle{
+    font-size: 14px;
+  }
+
+  .academic__courses__item__img{
+    width: 224px;
+    height: 118px;
+    margin-bottom: 8px;
+  }
+  
+  .academic__courses__item__img img{
+    width: 100px;
   }
 }
