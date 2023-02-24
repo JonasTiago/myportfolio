@@ -14,6 +14,7 @@ section.menu{
 .menu__title{
   font-weight: 700;
   color: var(--cor-de-text);
+  font-size: 18px;
 }
 
 .menu.scroll{
@@ -46,7 +47,7 @@ section.menu{
 }
 
 .menu__list__item a:hover{
-  color: blue;
+  color: var(--cor-de-hover);
 }
 
 @media (max-width: 768px) {

@@ -22,6 +22,7 @@ coloque nas sessões indicadas*/
   --cor-de-borde: #308fdde3;
   
   --cor-de-link: #0D0D0D;
+  --cor-de-hover:#308fdde3;
   
   --cor-button-blue: #236faded;
   --cor-button-green: #3ceb6289;
@@ -93,25 +94,43 @@ html{
   font-weight: bold;
   /* font-family: 'Permanent Marker', cursive; */
   font-family: 'Permanent Marker', cursive;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .arrow:hover a > span{
   opacity: 1;
   display: block;
   transform: translate3d(0, -50%, 0);
+  color: var(--cor-de-hover);
 }
 
 .arrow:hover ion-icon{
   transform: translate3d(0, -15%, 0);
+  color: var(--cor-de-hover);
+
 }
 
 /*Tablet*/
 @media (max-width: 768px) {
+  .arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+  }
+
+  .arrow a > ion-icon{
+    font-size: 50px;
+    transition: 1s;
   
-  .arrow ion-icon{
+  }
+  
+  .arrow a > span{
     display: none;
   }
+
+  /* .arrow ion-icon{
+    display: none;
+  } */
   /* Menu */
 
   /*title*/
