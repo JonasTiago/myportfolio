@@ -36,13 +36,6 @@ html{
   scroll-behavior: smooth;
 }
 
-.menu__title{
-  font-weight: 700;
-}
-
-
-
-
 .arrow{
   font-size: 50px;
   position: fixed;
@@ -62,10 +55,6 @@ html{
 .arrow ion-icon:hover{
   color: #2a7ae4;
 }
-
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media (max-width: 768px) {
@@ -87,7 +76,12 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+  .all {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
   /*Menu*/
 
   /*Titulo*/

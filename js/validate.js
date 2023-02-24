@@ -43,16 +43,4 @@ Array.from(document.querySelectorAll('[data-input]')).forEach((e) => {
   });
 });
 
-// Array.from(document.querySelectorAll("[data-repo]")).forEach(e=>{
-//   console.log()
-//   e.addEventListener("mouseover", element =>{
-//     element.target.children[0].classList.remove("invisible");
-//   })
-//   e.addEventListener("mouseleave", element =>{
-//     // element.target.classList.remove("invisible");
-//     element.target.children[0].classList.add("invisible")
-
-//   })
-// })
-
 

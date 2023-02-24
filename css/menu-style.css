@@ -11,6 +11,11 @@ section.menu{
   background-color: var(--cor-de-fundo);
 }
 
+.menu__title{
+  font-weight: 700;
+}
+
+
 .menu.scroll{
   height: 5rem;
   box-shadow:0 3px 5px rgba(0, 0, 0, 0.16);
