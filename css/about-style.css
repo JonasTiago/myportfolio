@@ -1,4 +1,11 @@
 /*Sessão About*/
+@font-face {
+  font-family: 'signature';
+  src: url('/fonts/Authentic Signature.otf') 
+  format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
 
 section.about{
   background-color: var(--cor-de-fundo2);
@@ -24,8 +31,9 @@ section.about{
   font-size: 18px;
 }
 
-.about__container img{
-  width: 140px;
+.signature{
+  font-family: 'signature';
+  font-size: 38px;
 }
 
 @media (max-width: 768px) {
@@ -52,5 +60,9 @@ section.about{
 @media (max-width: 425px) {
   .about__container{
     padding: 15px;
+  }
+
+  .signature{
+    font-size: 24px;
   }
 }
