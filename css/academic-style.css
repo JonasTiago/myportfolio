@@ -14,8 +14,14 @@ section.academic{
 
 .academic__courses{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 70%;
+  margin: auto;
+}
+
+.academic__courses__box{
+  display: flex;
+  justify-content: center;
   margin: auto;
 }
 
