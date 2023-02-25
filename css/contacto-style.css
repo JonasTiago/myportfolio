@@ -12,137 +12,184 @@ section.formcontato {
   padding: 100px;
 }
 
-.formcontato--esquerda{
-    margin:0 16px;
+.formcontato--esquerda {
+  margin: 0 16px;
+  width: 464px;
+  height: 594px;
+  background-color: var(--cor-de-fundo-blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.formcontato__text{
-    display: flex;
-    flex-direction: column;
+.formcontato--esquerda ion-icon:nth-child(1) {
+  font-size: 225px;
+  color: var(--cor-button-green);
+   transform: rotate(130deg); 
+   transform: rotate(140deg);
+  transform: rotate(120deg);
+  
+
+  position: absolute;
+  margin-bottom: 100px;
+  animation: contactos 0.5s infinite alternate ease-in-out;
 }
 
-.formcontato__title{
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.formcontato--esquerda ion-icon:nth-child(2) {
+  font-size: 170px;
+  color: var(--cor-button-green);
+  margin-top: 80px;
+
 }
 
-.formcontato__subtext{
-    font-size: 16px;
+@keyframes contactos {
+  0% {
+    transform: rotate(130deg); 
+  }
+  50% {
+    
+   transform: rotate(140deg);
+   
+  }
+  50% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(130deg);
+  }
 }
 
-.formcontato__form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
+.formcontato__text {
+  display: flex;
+  flex-direction: column;
 }
 
-.formcontato__form input,textarea{
-    width: 656px;
-    height: 56px;
-    margin-bottom: 32px;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
+.formcontato__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.formcontato__form input:focus, textarea:focus{
-    border-bottom:3px solid var(--cor-de-fundo-blue);
-    outline:none;
+.formcontato__subtext {
+  font-size: 16px;
 }
 
-.formcontato__form > div{
-    position: relative;
+.formcontato__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
 }
 
-.formcontato__form label{
-    font-size: 16px;
-    position: absolute;
-    top: 20px;
-    left: 12px;
-    margin-bottom: 20px;
-    color: #A2A2A2;
-    display: block;
-    transition: 0.5s;
+.formcontato__form input,
+textarea {
+  width: 656px;
+  height: 56px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
 }
 
-.formcontato__form .form-focus label{
-    font-size: 14px;
-    position: absolute;
-    top: -18px;
-    left: 5px;
-    margin-bottom: 20px;
-    display: block;
-    color: var(--cor-de-fundo-black);
-    font-weight: bold;
+.formcontato__form input:focus,
+textarea:focus {
+  border-bottom: 3px solid var(--cor-de-fundo-blue);
+  outline: none;
 }
 
-.formcontato__form .form-check label{
-    color: var(--cor-text-black);
-    opacity: 0.6;
-    font-weight: bold;
+.formcontato__form > div {
+  position: relative;
 }
 
-.formcontato__form .formcontato__textarea{
-    margin-bottom: 32px;
-    height: 133px;
-    padding: 12px;
+.formcontato__form label {
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  margin-bottom: 20px;
+  color: #a2a2a2;
+  display: block;
+  transition: 0.5s;
 }
 
-.formcontato__form .formcontato__botao{
-    font-size: 16px;
-    width: 165px;
-    height: 51px;
-    margin-bottom: 32px;
-    background-color: var(--cor-button-green);
-    border: none;
-    border-radius: 5px;
-    color: var(--cor-text-black);
-    cursor: pointer;
+.formcontato__form .form-focus label {
+  font-size: 14px;
+  position: absolute;
+  top: -18px;
+  left: 5px;
+  margin-bottom: 20px;
+  display: block;
+  color: var(--cor-de-fundo-black);
+  font-weight: bold;
 }
 
-.formcontato__form .formcontato__botao:hover{
-    opacity: 0.88;
+.formcontato__form .form-check label {
+  color: var(--cor-text-black);
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.formcontato__form .formcontato__textarea {
+  margin-bottom: 32px;
+  height: 133px;
+  padding: 12px;
+}
+
+.formcontato__form .formcontato__botao {
+  font-size: 16px;
+  width: 165px;
+  height: 51px;
+  margin-bottom: 32px;
+  background-color: var(--cor-button-green);
+  border: none;
+  border-radius: 5px;
+  color: var(--cor-text-black);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formcontato__form .formcontato__botao:hover {
+  opacity: 0.88;
 }
 
 @media (max-width: 768px) {
-    section.formcontato{
-        width: 100vw;
-        margin: auto;
-        padding: 32px;
-    }
+  section.formcontato {
+    width: 100vw;
+    margin: auto;
+    padding: 32px;
+  }
 
-    .formcontato--esquerda{
-        display: none;
-    }
+  .formcontato--esquerda {
+    display: none;
+  }
 
-    .formcontato__contacto {
-        display: initial;
-        width:0;
-        margin: auto;
-        padding: 0;
-    }
-    .formcontato__form input,textarea{
-        width: 100%;
-    }
+  .formcontato__contacto {
+    display: initial;
+    width: 0;
+    margin: auto;
+    padding: 0;
+  }
+  .formcontato__form input,
+  textarea {
+    width: 100%;
+  }
 
-    .formcontato__form .formcontato__textarea{
-        margin-bottom: 32px;
-        height: 133px;
-        padding: 12px;
-    }
+  .formcontato__form .formcontato__textarea {
+    margin-bottom: 32px;
+    height: 133px;
+    padding: 12px;
+  }
 }
 
 @media (max-width: 425px) {
-    section.formcontato{
-        padding: 15px;
-    }
+  section.formcontato {
+    padding: 15px;
+  }
 
-    .formcontato__form .formcontato__botao{
-        width: 100%;    
-    }
+  .formcontato__form .formcontato__botao {
+    width: 100%;
+  }
 }
-
-

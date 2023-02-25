@@ -81,7 +81,6 @@ section.title {
 @media (max-width: 768px) {
   section.title {
     padding: 35px;
-    margin: 0;
   }
   
   .title__div {
@@ -121,7 +120,7 @@ section.title {
 
 @media (max-width: 425px) {
   section.title {
-    margin-top: 0;
+    margin-top: 3rem;
     padding: 16px;
   }
 

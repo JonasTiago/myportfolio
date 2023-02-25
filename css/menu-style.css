@@ -10,16 +10,19 @@ section.menu{
   height: 4rem;
   background-color: var(--cor-de-fundo-green);
   color: var(--cor-text-blue);
+  transition: 0.5s;
 }
 
 .menu__title{
   font-weight: 700;
-  font-size: 18px;
 }
 
 .menu.scroll{
-  height: 5rem;
+  height: 5.5rem;
+  font-size: 18px;
   box-shadow:0 3px 5px rgba(0, 0, 0, 0.16);
+  background-color: var(--cor-de-fundo-blue);
+  color: var(--cor-text-green);
 }
 
 .menu > header{
@@ -27,9 +30,12 @@ section.menu{
   align-items: center;
 }
 
-.menu > header > img{
+.menu > header > ion-icon{
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  transform: rotate(130deg);
 }
 
 .menu > header > .menu__title{
@@ -43,20 +49,33 @@ section.menu{
 }
 
 .menu__list__item{
-  margin-left:20px;
-  
+  margin-left:20px; 
 }
 
-.menu__list__item a:hover{
-  color: var(--cor-de-hover);
+.menu__list__item a::after{
+  content: '';
+  width: 0%;
+  height: 4px;
+  display: block;
+  background-color: currentColor;
+  opacity: 0;
+  transition: 0.3s;
+  margin-top: 1px;
 }
+
+.menu__list__item a:hover::after{
+  opacity: 1;
+  content: '';
+  width: 100%;
+  background-color: currentColor;
+}
+
 
 @media (max-width: 768px) {
   /* Menu */
 
   section.menu{
     justify-content: space-between;
-    position: initial;
     padding: 0 30px;
     width: 100vw;
     height: 5rem;
@@ -70,8 +89,11 @@ section.menu{
 
 @media (max-width: 425px) {
   section.menu{
-    justify-content: space-between;
     padding:18px;
     height: 3rem;
+  }
+
+  .menu.scroll{
+    height: 3.5rem;
   }
 }
