@@ -1,12 +1,12 @@
 /*Sessão skills*/
 
 section.skills {
-  background-color: var(--cor-de-fundo);
+  background-color: var(--cor-de-fundo-green);
+  color: var(--cor-text-blue);
   padding: 50px 0;
 }
 
 .skills__title {
-  color: var(--cor-text-black);
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -22,7 +22,7 @@ section.skills {
 .skills__box {
   width: 180px;
   height: 174px;
-  background-color: var(--cor-de-fundo2);
+  background-color: var(--cor-text-white);
   display: flex;
   justify-content: center;
   align-items: center;

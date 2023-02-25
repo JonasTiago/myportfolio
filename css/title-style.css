@@ -1,9 +1,8 @@
 /*Sessão Title*/
 
 section.title {
-  background-color: var(--cor-de-fundo);
+  background-color: var(--cor-de-fundo-green);
   color: var(--cor-text-black);
-
   margin-top: 4rem;
   padding: 80px;
 }

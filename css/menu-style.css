@@ -8,12 +8,12 @@ section.menu{
   top:0;
   right: 0;
   height: 4rem;
-  background-color: var(--cor-de-fundo);
+  background-color: var(--cor-de-fundo-green);
+  color: var(--cor-text-blue);
 }
 
 .menu__title{
   font-weight: 700;
-  color: var(--cor-de-text);
   font-size: 18px;
 }
 
@@ -39,11 +39,12 @@ section.menu{
 .menu__list{
   display: flex;
   justify-content: space-around;
-  color: var(--cor-de-text);
+  font-weight: 700;
 }
 
 .menu__list__item{
   margin-left:20px;
+  
 }
 
 .menu__list__item a:hover{

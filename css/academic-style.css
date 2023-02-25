@@ -1,8 +1,10 @@
 /* Experiência Acadêmica*/
 
 section.academic{
-  background-color: var(--cor-de-fundo2);
+  background-color: var(--cor-de-fundo-blue);
+  color: var(--cor-text-green);
   padding: 60px 0;
+
 }
 
 .academic__title{
@@ -10,6 +12,7 @@ section.academic{
   text-align: center;
   margin-bottom: 32px;
   font-weight: 700;
+
 }
 
 .academic__courses{
@@ -28,13 +31,11 @@ section.academic{
 .academic__courses__item__title{
   font-size: 22px;
   font-weight: 700;
-  color: var(--cor-text-black);
   margin-bottom: 4px;
 }
 
 .academic__courses__item__subtitle{
   font-size: 16px;
-  color: var(--cor-text-black);
 }
 
 .academic__courses__item__img{

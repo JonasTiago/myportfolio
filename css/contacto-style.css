@@ -1,8 +1,8 @@
 /*Contato*/
 
 section.formcontato {
-  background-color: var(--cor-de-fundo2);
-  color: var(--cor-text-black);
+  background-color: var(--cor-de-fundo-gray);
+  color: var(--cor-text-blue);
 }
 
 .formcontato__contacto {
@@ -49,7 +49,7 @@ section.formcontato {
 }
 
 .formcontato__form input:focus, textarea:focus{
-    border-bottom:3px solid var(--cor-de-borde);
+    border-bottom:3px solid var(--cor-de-fundo-blue);
     outline:none;
 }
 
@@ -75,12 +75,13 @@ section.formcontato {
     left: 5px;
     margin-bottom: 20px;
     display: block;
-    color: var(--cor-de-borde);
+    color: var(--cor-de-fundo-black);
     font-weight: bold;
 }
 
 .formcontato__form .form-check label{
-    color: #000000ab;
+    color: var(--cor-text-black);
+    opacity: 0.6;
     font-weight: bold;
 }
 
@@ -90,20 +91,15 @@ section.formcontato {
     padding: 12px;
 }
 
-.formcontato__form .formcontato__textarea::placeholder{
-    font-size: 16px;
-    color: #A2A2A2;
-}
-
 .formcontato__form .formcontato__botao{
     font-size: 16px;
     width: 165px;
     height: 51px;
     margin-bottom: 32px;
-    background-color: var(--cor-button-blue);
+    background-color: var(--cor-button-green);
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--cor-text-black);
     cursor: pointer;
 }
 
