@@ -240,7 +240,6 @@
             </ul>
           </div>
         </div>
-        <!-- <div id="hobbies-anchor"></div> -->
       </section>
       <!-- Sessão de Histórico Acadêmico -->
       <section class="academic" id="academic">
@@ -248,7 +247,6 @@
         <div class="academic__courses">
           <div class="academic__courses__box">
             <ul class="academic__courses__list">
-              <!-- Insira a logo de seu local de formação -->
               <li class="academic__courses__item__img">
                 <img src="./assets/logoDriven.png" />
               </li>
@@ -260,28 +258,6 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="academic__courses__box">
-            <ul class="academic__courses__list">
-              <li class="academic__courses__item__img"><img src="" /></li>
-              <li class="academic__courses__item__title">
-                <h4>Formação ux Design</h4>
-              </li>
-              <li class="academic__courses__item__subtitle">
-                <p>2019 - Alura</p>
-              </li>
-            </ul>
-          </div> -->
-          <!-- <div class="academic__courses__box">
-            <ul class="academic__courses__list">
-              <li class="academic__courses__item__img"><img src="" /></li>
-              <li class="academic__courses__item__title">
-                <h4>Pós-graduação design</h4>
-              </li>
-              <li class="academic__courses__item__subtitle">
-                <p>Em andamento - UFRJ</p>
-              </li>
-            </ul>
-          </div> -->
         </div>
         <div id="xp-anchor"></div>
       </section>
@@ -293,7 +269,6 @@
         </h2>
         <div class="experiencie__full__box">
           <div class="experiencie__box" data-anime="left">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
             <div>
               <img
                 class="experience__img"
@@ -310,7 +285,6 @@
               <h2 class="experience__title">Decodificador de texto</h2>
               <h3 class="experience__text">Challenge Alura Codificador</h3>
               <div class="experience__description">
-                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                 <span class="experience__repo"
                   ><a
                     href="https://github.com/JonasTiago/Decodificador"
@@ -454,8 +428,7 @@
       <section class="formcontato">
         <div id="contact" class="formcontato__contacto">
           <div class="formcontato--esquerda" data-anime="left">
-            <ion-icon name="call-outline"></ion-icon>
-            <ion-icon name="at"></ion-icon>
+            <img src="/assets/Hands - Phone.png" alt="">
           </div>
           <div class="formcontato__text" data-anime="right">
             <h2 class="formcontato__title">Contato</h2>
@@ -471,6 +444,8 @@
                   class="formcontato__input"
                   type="text"
                   id="nome"
+                  maxlength="50"
+                  minlength="3"
                   required
                   data-input="input"
                   autocomplete="off"
@@ -493,6 +468,7 @@
                   class="formcontato__input"
                   type="text"
                   id="assunto"
+                  maxlength="50"
                   required
                   data-input="input"
                   autocomplete="off"
@@ -505,7 +481,9 @@
                   rows="5"
                   cols="40"
                   id="mensagem"
+                  maxlength="300"
                   name="mensagem"
+                  required
                   autocomplete="off"
                   data-input="textarea"
                 ></textarea>
@@ -533,6 +511,7 @@
     </div>
 
     <!-- Script Linkado do seu documento de JavaScript -->
+    <script src="js/animation.js"></script>
     <script src="js/validate.js"></script>
     <script
       type="module"
