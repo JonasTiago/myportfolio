@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/menu-style.css" />
     <link rel="stylesheet" href="css/title-style.css" />
     <link rel="stylesheet" href="css/about-style.css" />
-    <link rel="stylesheet" href="css/skillsHobbies-style.css" />
+    <link rel="stylesheet" href="css/skills-style.css" />
     <link rel="stylesheet" href="css/academic-style.css" />
     <link rel="stylesheet" href="css/experience-style.css" />
     <link rel="stylesheet" href="css/contacto-style.css" />
@@ -32,32 +32,35 @@
     <!-- Sessão de Menu  -->
     <div class="all">
       <section class="menu" id="menu">
-        <header>
-          <ion-icon name="code-slash-outline"></ion-icon>
-          <h3 class="menu__title">Jonas Tiago</h3>
-        </header>
-        <nav>
-          <ul class="menu__list">
-            <li class="menu__list__item not__table">
-              <a href="#about-anchor">Sobre mim</a>
-            </li>
-            <li class="menu__list__item not__table">
-              <a href="#skills-anchor">Skills</a>
-            </li>
-            <li class="menu__list__item not__table">
-              <a href="#academic-anchor">Formações e Cursos</a>
-            </li>
-            <li class="menu__list__item not__table">
-              <a href="#xp-anchor">Experiência</a>
-            </li>
-            <li class="menu__list__item"><a href="#contact">Contato</a></li>
-          </ul>
-          <!-- <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li> -->
-        </nav>
+        <div>
+          <header>
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3 class="menu__title" href="#title"><a href="#title"> Jonas Santos</a></h3>
+          </header>
+          <nav>
+            <ul class="menu__list">
+              <li class="menu__list__item not__table">
+                <a href="#about">Sobre mim</a>
+              </li>
+              <li class="menu__list__item not__table">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="menu__list__item not__table">
+                <a href="#academic">Formações e Cursos</a>
+              </li>
+              <li class="menu__list__item not__table">
+                <a href="#xp">Experiência</a>
+              </li>
+              <li class="menu__list__item"><a href="#contact">Contato</a></li>
+            </ul>
+            <!-- <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li> -->
+          </nav>
+        </div>
       </section>
       <div id="top-name"></div>
+
       <!-- Sessão de Header/Title/Hero -->
-      <section class="title">
+      <section class="title" id="title">
         <div class="title__div">
           <img class="title__profile" src="assets/profile3.jpg" />
           <div class="title__container">
@@ -102,12 +105,11 @@
               </li>
             </ul>
           </div>
-          <div id="about-anchor"></div>
         </div>
       </section>
-
+      
       <!-- Sessão sobre mim -->
-      <section class="about" id="sobremim">
+      <section class="about" id="about">
         <div class="about__container">
           <h3 class="about__title">Sobre mim</h3>
           <p class="about__paragraph">
@@ -128,8 +130,8 @@
       </section>
 
       <!-- Sessão de Skills/Habilidades -->
-      <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
+      <section class="skills" id="skills">
+        <h3 class="skills__title">Skills</h3>
         <div class="skills__line">
           <div class="skills__box" data-anime="left">
             <ul>
@@ -241,6 +243,7 @@
           </div>
         </div>
       </section>
+
       <!-- Sessão de Histórico Acadêmico -->
       <section class="academic" id="academic">
         <h2 class="academic__title">Formação acadêmica</h2>
@@ -259,11 +262,10 @@
             </ul>
           </div>
         </div>
-        <div id="xp-anchor"></div>
       </section>
 
       <!-- Sessão de Experiência Profissional/Projetos-->
-      <section class="experience">
+      <section class="experience" id="xp">
         <h2 class="experience__section__title" id="xp">
           Experiência Profissional
         </h2>
@@ -425,8 +427,8 @@
       </section>
 
       <!-- Sessão de Contato -->
-      <section class="formcontato">
-        <div id="contact" class="formcontato__contacto">
+      <section class="formcontato" id="contact">
+        <div  class="formcontato__contacto">
           <div class="formcontato--esquerda" data-anime="left">
             <img src="/assets/Hands - Phone.png" alt="">
           </div>
@@ -503,12 +505,12 @@
       </section>
     </div>
 
-    <div class="arrow top">
+    <!-- <div class="arrow top">
       <a href="#top-name">
         <ion-icon name="arrow-up-outline"></ion-icon>
         <span>topo</span>
       </a>
-    </div>
+    </div> -->
 
     <!-- Script Linkado do seu documento de JavaScript -->
     <script src="js/animation.js"></script>

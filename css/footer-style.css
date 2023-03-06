@@ -4,7 +4,7 @@ section.footer {
   background-color: var(--cor-de-fundo-blue);
   color: var(--cor-text-green);
   width: 100%;
-  height: 102px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,14 +12,38 @@ section.footer {
 
 .footer__rodape{
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer__rodape > p {
+  font-size: 2rem;
   margin-bottom:5px;
 }
 
 @media (max-width: 768px) {
-  section.footer{
-    width: 100vw;
+  section.footer {
+    height: 10vh;
+  }
+  
+  .footer__rodape{
+    margin-top: 20px;
+  }
+  
+  .footer__rodape > p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  section.footer {
+    height: 10vh;
+  }
+  
+  .footer__rodape{
+    margin-top: 15px;
+  }
+  
+  .footer__rodape > p {
+    font-size: 1.5rem;
   }
 }

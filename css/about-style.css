@@ -3,31 +3,34 @@
 section.about{
   background-color: var(--cor-de-fundo-blue);
   color: var(--cor-text-green);
+  height: 100vh; 
+  display: flex;
+  align-items: center;
 }
 
 .about__container{
   padding: 60px 0;
   margin: auto;
-  width: 68%;
+  width: 85%;
 }
 
 .about__title{
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 5.8rem;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
 .about__paragraph{
-  width: 65%;
   margin-bottom: 16px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 2.8rem;
+  line-height: 4.5rem;
 }
 
 @media (max-width: 768px) {
   section.about{
       width: 100vw;
+      height: 45vh;
   }
 
   .about__container{
@@ -37,21 +40,32 @@ section.about{
   }
 
   .about__title{
-    font-size: 22px;
+    font-size: 2.8rem;
   }
 
   .about__paragraph{
-    width: 100%;
-    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 
 @media (max-width: 425px) {
-  .about__container{
-    padding: 15px;
-  }
+  section.about{
+    height: 48vh;
+}
 
-  .signature{
-    font-size: 24px;
-  }
+.about__container{
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+}
+
+.about__title{
+  font-size: 2.8rem;
+}
+
+.about__paragraph{
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
 }

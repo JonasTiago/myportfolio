@@ -5,9 +5,8 @@ console.log(test)
 
 document.addEventListener('scroll', (event) => {
   const scrollPosition = event.target.scrollingElement.scrollTop;
-  const windowTop = window.pageYOffset + window.innerHeight * 0.85;
-  // console.log(arrow)
   if (scrollPosition > 10) {
+    scrollMax = scrollPosition;
     if (!menu.classList.contains('scroll')) {
       menu.classList.add('scroll');
       arrow.classList.remove("top");
@@ -15,10 +14,14 @@ document.addEventListener('scroll', (event) => {
   } else {
     if (menu.classList.contains('scroll')) {
       menu.classList.remove('scroll');
-      arrow.classList.add("top")
+      arrow.classList.add("top");
     }
   }
+});
 
+document.addEventListener('scroll', (event) => {
+  const windowTop = window.scrollY + window.innerHeight * 0.85;
+  
   Array.from(document.querySelectorAll('[data-anime]')).forEach((element) => {
     if (windowTop > element.offsetTop) {
       element.classList.add('animation');

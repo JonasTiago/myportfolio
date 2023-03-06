@@ -35,52 +35,21 @@ coloque nas sessões indicadas*/
 
 html{
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
-.arrow{
-  position: fixed;
-  right: 55px;
-  bottom: 50px;
+::-webkit-scrollbar{
+  width: 18px;
 }
 
-.top{
-  display: none;
+::-webkit-scrollbar-track{
+  border-radius: 35px;
+  background-color: #05f28376;
 }
 
-.arrow a{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.arrow a > ion-icon{
-  font-size: 70px;
-  font-weight: bold;
-  filter:drop-shadow(0px 2px 0px);
-  transition: 1s;
-
-}
-
-.arrow a > span{
-  opacity: 0;
-  font-size: 32px;
-  font-weight: bold;
-  /* font-family: 'Permanent Marker', cursive; */
-  font-family: 'Permanent Marker', cursive;
-  transition: 0.5s;
-}
-
-.arrow:hover a > span{
-  opacity: 1;
-  display: block;
-  transform: translate3d(0, -50%, 0);
-  color: var(--cor-de-hover);
-}
-
-.arrow:hover ion-icon{
-  transform: translate3d(0, -15%, 0);
-  color: var(--cor-de-hover);
-
+::-webkit-scrollbar-thumb{
+  border-radius: 35px;
+  background-color: #0a01409a;
 }
 
 /*Tablet*/

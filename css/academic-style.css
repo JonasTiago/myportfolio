@@ -3,23 +3,24 @@
 section.academic{
   background-color: var(--cor-de-fundo-blue);
   color: var(--cor-text-green);
-  padding: 60px 0;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
 }
 
 .academic__title{
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 32px;
+  font-size: 5rem;
   font-weight: 700;
-
+  margin-bottom:35px ;
 }
 
 .academic__courses{
   display: flex;
   justify-content: center;
-  width: 70%;
-  margin: auto;
+  width: 85%;
 }
 
 .academic__courses__box{
@@ -29,26 +30,26 @@ section.academic{
 }
 
 .academic__courses__item__title{
-  font-size: 22px;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin: 18px 0;
 }
 
 .academic__courses__item__subtitle{
-  font-size: 16px;
+  font-size: 2rem;
 }
 
 .academic__courses__item__img{
-  width: 368px;
-  height: 286px;
-  background-color: #fff;
+  width: 40rem;
+  height: 30rem;
+  background-color: #ffffff;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
 .academic__courses__item__img img{
-  width: 190px;
+  width: 20rem;
   margin: auto;
 }
 
@@ -56,10 +57,11 @@ section.academic{
   section.academic{
       width: 100vw;
       padding: 30px;
+      height: 60vh;
     }
     
     .academic__title{
-      font-size: 22px;
+      font-size: 2.8rem;
     }
     
     .academic__courses{
@@ -68,17 +70,17 @@ section.academic{
   }
 
   .academic__courses__item__title{
-    font-size: 16px;
-    margin-bottom: 4px;
+    font-size: 2rem;
+    margin-bottom: 8px;
   }
   
   .academic__courses__item__subtitle{
-    font-size: 14px;
+    font-size: 1.5rem;
   }
 
   .academic__courses__item__img{
-    width: 224px;
-    height: 118px;
+    width: 28rem;
+    height: 15rem;
     margin-bottom: 8px;
   }
   
@@ -89,7 +91,6 @@ section.academic{
 
 @media (max-width: 425px) {
   section.academic{
-    width: 100vw;
     padding: 15px;
   }
 
